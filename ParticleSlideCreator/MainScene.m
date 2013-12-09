@@ -61,7 +61,7 @@ const NSInteger TAG_MENU = 100;
       [self addChild: self.renderTexture ];
       
       // manually retain the particles as you dont add them to a container
-      self.particles = [CCParticleSystemQuad particleWithFile:@"particle_portal.plist"];
+      self.particles = [CCParticleSystemQuad particleWithFile:@"emitter.plist"];
       //self.particles = [CCParticleFire node];
       self.particles.position = center;
       self.particles.anchorPoint = anchor;
