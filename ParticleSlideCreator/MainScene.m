@@ -60,6 +60,10 @@ const NSInteger TAG_MENU = 100;
       self.renderTexture.anchorPoint = anchor;
       [self addChild: self.renderTexture ];
       
+      /* NOTE:  Try out the particle_portal.plist or particle_sun.plist.
+       * OR USE YOUR OWN!!!
+       */
+      
       // manually retain the particles as you dont add them to a container
       self.particles = [CCParticleSystemQuad particleWithFile:@"emitter.plist"];
       //self.particles = [CCParticleFire node];
